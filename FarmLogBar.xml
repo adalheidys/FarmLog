@@ -1,0 +1,66 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="FarmLogBar.lua"/>
+	<Frame name="FarmLogBar" parent="UIParent" toplevel="true" enableMouse="true">
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("BAG_UPDATE");
+			</OnLoad>
+			<OnEvent function="FarmLogBar_Update" />
+		</Scripts>
+		<Size>
+			<AbsDimension x="180" y="65" />
+		</Size>
+		<Anchors>
+			<Anchor point="TOP">
+				<Offset>
+					<AbsDimension x="0" y="-20" />
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Backdrop parentKey="backdrop" bgFile="Interface\DialogFrame\UI-DialogBox-Background"
+			edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="16"/>
+			</EdgeSize>
+		</Backdrop>
+		<Layers>
+			<Layer>
+				<FontString font="Fonts\FRIZQT__.TTF" text="Your Inventory is worth:" justifyH="CENTER" justifyV="CENTER">
+					<FontHeight val="12"/>
+					<Anchors>
+						<Anchor point="TOP" relativeTo="FarmLogBar">
+							<Offset>
+								<AbsDimension x="0" y="-15" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+					<Shadow>
+						<Offset x="1" y="1" />
+						<Color r="0" g="0" b="0"/>
+					</Shadow>
+				</FontString>
+				<FontString parentKey="totalItemSellPrice" font="Fonts\FRIZQT__.TTF" text="???" justifyH="CENTER" justifyV="CENTER">
+					<FontHeight val="12"/>
+					<Anchors>
+						<Anchor point="CENTER" relativeTo="FarmLogBar">
+							<Offset>
+								<AbsDimension x="0" y="-10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+					<Shadow>
+						<Offset x="1" y="1" />
+						<Color r="0" g="0" b="0"/>
+					</Shadow>
+				</FontString>
+			</Layer>
+		</Layers>
+	</Frame>
+</Ui>

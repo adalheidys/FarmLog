@@ -1,0 +1,8 @@
+## Interface: 40300
+## Title: FarmLog
+## Notes: Tiny addon for calculating vendor price for farmed items.
+## Author: adalheidys
+
+FarmLogBar.xml
+FarmLogBar.lua
+FarmLogCommands.lua
