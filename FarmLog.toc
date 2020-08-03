@@ -1,6 +1,6 @@
 ## Interface: 40300
 ## Title: FarmLog
-## Notes: Tiny addon for calculating vendor price for farmed items.
+## Notes: A tiny add-on that tracks your Inventory's worth in gold. 
 ## Author: adalheidys
 
 FarmLogBar.xml
