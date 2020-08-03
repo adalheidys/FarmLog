@@ -7,4 +7,4 @@
 
 I earn gold by farming pricey reagents (like Borean Leather) and uncommon drops, and then selling them to the nearest vendor. This addon helps me keep track of how much gold I've accumulated.
 
-*FarmLog* also adds a chat command, `/farmed`, that toggles the Inventory's worth bar on and off.
+*FarmLog* also adds a chat command, `/farmed`, that toggles the worth bar on and off.
